@@ -17,7 +17,7 @@ This paper describes the use of Generalized Additive Models (GAMs) to create reg
 This paper has been submitted for publication in ISPRS International Journal of Geo-Information (November 2024)
 
 ## Code
-To run the analysis in this paper you should download the R script `GGP-GAM_paper2_v5.R`, all the data files and install the packages. Package and other info is below. The data files and supporting scripts will need will need to be locally available . The code recreates the results in the same sequence as the paper. 
+To run the analysis in this paper you should download the R script `GGP-GAM_paper2_v5.R`, all the data files and install the packages. Package and other info is below. The data files and supporting scripts will need will need to be locally available . The code recreates the results in the same sequence as they are presented in the paper. 
 
 If you have any problems with data / code / versions etc please contact Lex Comber at the email above.
 
