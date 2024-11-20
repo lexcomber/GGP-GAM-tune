@@ -1,5 +1,6 @@
 # GGP-GAM-tune
-Deeper investigation into Spatially Varying Coefficient models using GAMs with GP smooths
+The code and data in this repo are supporting the second publication exploring the use of GAMs with GP splines / smooths for spatially varying coeffient modelling.
+This has been submitted to 
 
 ```{r}
 > sessionInfo()
