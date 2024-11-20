@@ -1,6 +1,25 @@
-# GGP-GAM-tune
-The code and data in this repo are supporting the second publication exploring the use of GAMs with GP splines / smooths for spatially varying coeffient modelling.
-This has been submitted to 
+# Encapsulating spatially varying relationships with a Generalized Additive Model
+
+Alexis Comber<sup>1*</sup>, Paul Harris<sup>2</sup>, Daisuke Murakami<sup>3</sup>, Tomoki Nakaya<sup>4</sup>, Naru Tsutsumida<sup>5</sup>, Takahiro Yoshida<sup>6</sup> and Chris Brunsdon<sup>7</sup>
+
+<sup>1</sup> School of Geography, University of Leeds, Leeds, UK\
+<sup>2</sup> Sustainable Agriculture Sciences North Wyke, Rothamsted Research, Okehampton, UK\
+<sup>3</sup> Institute of Statistical Mathematics, Japan\
+<sup>4</sup> Graduate School of Environmental Studies, Tohoku University, Japan\
+<sup>5</sup> Department of Information and Computer Sciences, Saitama University, Japan\
+<sup>6</sup> Center for Spatial Information Science, University of Tokyo, Japan\
+<sup>7</sup> National Centre for Geocomputation, Maynooth University, Ireland\
+<sup>*</sup> contact author: a.comber@leeds.ac.uk
+
+## Abstract
+This paper describes the use of Generalized Additive Models (GAMs) to create regression models whose coefficient estimates vary with geographic location. The approach uses Gaussian Process (GP) splines (smooths) for each predictor variable which are parameterised with observation location in order to generate spatially varying coefficients (SVCs). These describe the spatially varying relationships between predictor and response variables. The proposed GAM approach was compared with Multiscale Geographically Weighted Regression (MGWR) using simulated data with complex spatial heterogeneities. The geographical GP GAM (GGP-GAM) was found to out-perform MGWR across a range of fit metrics and resulted in more accurate coefficient estimates and lower residual errors. The model for one of simulated datasets was investigated in detail to illustrate GAM diagnostics, model checks, spline / smooth convergence and basis evaluations, and tuning via the number knots. A larger simulated case study was investigated to explore the trade-offs between GGP-GAM complexity, performance and computation. Finally the GGP-GAM and MGWR approaches were applied to an empirical case study. The resulting models had very similar accuracies and fits, and generated subtly different spatially varying coefficient estimates. A number of areas of further work are identified.
+
+This paper has been submitted for publication in ISPRS International Journal of Geo-Information (November 2024)
+
+## Code
+To run the analysis in this paper you should download the R script `GGP-GAM_paper2_v5.R`, all the data files and install the packages. Package and other info is below. The data files and supporting scripts will need will need to be locally available . The code recreates the results in the same sequence as the paper. 
+
+If you have any problems with data / code / versions etc please contact Lex Comber at the email above.
 
 ```{r}
 > sessionInfo()
